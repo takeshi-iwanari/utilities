@@ -20,7 +20,6 @@ fi
 
 cd "$DIR_NAME"
 
-
 sudo perf record -F 99 -g -a \
 --call-graph lbr -o perf_record_system_wide_lbr.data -- sleep 10
 
@@ -58,6 +57,6 @@ if [ $pid ]; then
     -o perf_stat_lidar_top.txt -- sleep 10
 
     top -b -d 1 -n 60 -p "$pid" > top_lidar_top.txt
-
 fi
 
+sudo chown `whoami`:`whoami` *
