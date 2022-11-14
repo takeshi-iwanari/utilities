@@ -5,11 +5,18 @@
 # L1-dcache-loads,L1-dcache-stores,L1-icache-load-misses,LLC-load-misses,LLC-loads,LLC-stores,\
 # LLC-store-misses,branch-loads,branch-load-misses
 
+# metrics=\
+# cycles,instructions,bus-cycles,cache-misses,L1-dcache-load-misses,\
+# L1-dcache-loads,L1-dcache-stores,L1-icache-load-misses,LLC-load-misses,LLC-loads,LLC-stores,\
+# LLC-store-misses,branch-loads,branch-load-misses,\
+# uncore_imc_free_running_0/data_read/,uncore_imc_free_running_0/data_total/,uncore_imc_free_running_0/data_write/,\
+# uncore_imc_free_running_1/data_read/,uncore_imc_free_running_1/data_total/,uncore_imc_free_running_1/data_write/
+
 metrics=\
 cycles,instructions,bus-cycles,cache-misses,L1-dcache-load-misses,\
 L1-dcache-loads,L1-dcache-stores,L1-icache-load-misses,LLC-load-misses,LLC-loads,LLC-stores,\
 LLC-store-misses,branch-loads,branch-load-misses,\
-uncore_imc/data_reads/,uncore_imc/data_reads/
+uncore_imc/data_reads/,uncore_imc/data_writes/
 
 DIR_NAME=perf_`date "+%Y%m%d-%H%M%S"`
 echo save to "$DIR_NAME"
